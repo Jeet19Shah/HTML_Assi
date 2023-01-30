@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/innerpage.css">
+</head>
+<body>
+    <section class="dashboard">
+
+        <header>
+            <div>
+                <img src="images/menu-bar.svg" alt="">
+            </div>
+
+            <div>
+                <img src="images/header-logo.svg" alt="err">
+            </div>
+            
+            
+            <img src="images/search-icon.svg" alt="" id="search-icon">
+            <p>Search</p>
+            
+            <div class="right-header">
+                <img src="images/notification-icon.svg" alt="" id="alert">
+                <img src="images/profile.png" alt="" id="profile">
+                <span>John Doe</span>
+                <img src="images/downward-arrow.svg" alt="" id="down-arrow">
+            </div>
+         
+            
+        </header>
+    </section>
+
+
+        <section class="main">
+
+
+            <div class="left_slidebar">
+
+
+                <div class="slidebar-item default">
+                    <img src="images/dashboard-default.svg" alt="" class="slidebar_item_icon icon-image">
+                    <span>Dashboard</span>
+                </div>
+
+
+                <div class="slidebar-item active">
+                    <img src="images/graph-active.svg" alt="" class="slidebar_item_icon icon-image">
+                    <span>Analysis</span>
+                </div>
+
+                <div class="slidebar-item default">
+                    <img src="images/inbox-default.svg" alt="" class="slidebar_item_icon icon-image">
+                    <!-- <img src="images/maintenance-default.svg" alt="" class="slidebar_item_icon icon-image"> -->
+                    <span>Inbox</span>
+                </div>
+
+                <div class="slidebar-item default">
+                    <img src="images/clock-default.svg" alt="" class="slidebar_item_icon icon-image">
+                    <span>History</span>
+                </div>
+
+                <div class="slidebar-item default">
+                    <img src="images/user-default.svg" alt="" class="slidebar_item_icon icon-image">
+                    <!-- <img src="images/graph-default.svg" alt="" class="slidebar_item_icon icon-image"> -->
+                    <span>Users</span>
+                </div>
+
+                <div class="slidebar-item default">
+                    <img src="images/maintenance-default.svg" alt="" class="slidebar_item_icon icon-image">
+                    <!-- <img src="images/inbox-default.svg" alt="" class="slidebar_item_icon icon-image"> -->
+                    <span>Maintenance</span>
+                </div>
+
+                <div class="slidebar-item default">
+                    <img src="images/setting-default.svg" alt="" class="slidebar_item_icon icon-image">
+                    <span>Setting</span>
+                </div>
+
+            </div>
+
+
+            <div class="form">
+                <h2>Analysis</h2>
+
+                <div class="main-form">
+                    <h4>One Column</h4>
+
+                    <input type="text" name="name" id="name" placeholder="Name" />
+
+                    <input type="text" name="option" id="option" placeholder="Dropdown" />
+
+                    <textarea name="text_area" id="text_area" cols="30" rows="10" placeholder="Multiple Lines"></textarea>
+
+
+
+                    <h4>Two Column</h4>
+
+                    <div class="grid-container">
+                        <input type="text" name="name" id="Name" placeholder="Name" />
+                        <fieldset style="position: relative;">
+                            <legend style="position: absolute; top: 5px; font-size: 13px; background-color: #fff; width: 60px; left: 30px; color: #ADADAD;">username</legend>
+                            <input type="text" name="username" id="username" value="John Doe" />
+                        </fieldset>
+                        
+                        <input type="password" name="password" id="password" placeholder="Password" />
+                        <input type="text" name="dropdown2" id="dropdown2" placeholder="Dropdown" />
+                    </div>
+
+
+                    <h4>Three Column</h4>
+                    <div class="three-column">
+                        <fieldset style="position: relative;">
+                            <legend style="position: absolute; top: 6px; font-size: 13px; background-color: #fff; width: 34px; left: 30px; color: #ADADAD;">focus</legend>
+                            <input type="text" name="focus" id="focus" />
+                        </fieldset>
+                        
+                        <fieldset style="position: relative;">
+                            <legend style="position: absolute; top: 6px; font-size: 13px; background-color: #fff; width: 55px; left: 30px; color: #ADADAD;">Password</legend>
+                            <input type="password" name="password2" id="password2" value="123456"/>
+                        </fieldset>
+
+                        <fieldset style="position: relative;">
+                            <legend style="position: absolute; top: 6px; font-size: 13px; background-color: #fff; width: 50px; left: 30px; color: #ADADAD;">Disabled</legend>
+                            <input type="text" name="disabled" id="disabled" value="John Doe" disabled />
+                        </fieldset>
+                        
+                        
+                    </div>
+
+
+                    <h4>Four Column</h4>
+                    <div class="four-column">
+
+                        <fieldset style="position: relative;">
+                            <legend style="position: absolute; top: 6px; font-size: 13px; background-color: #fff; width: 68px; left: 30px; color: #FF3B3B;">Designation</legend>
+                            <input type="text" name="designation" id="designation" value="UI Designer"/>
+                            <span id="input-info">Enter valid data</span>
+                        </fieldset>
+                        
+                        <input type="text" name="full-name" id="full-name" placeholder="Name"/>
+                        <span id="full-name-info">Enter Your full name as per your id</span>
+                        <fieldset style="position: relative;">
+                            <legend style="position: absolute; top: 5px; font-size: 13px; background-color: #fff; width: 60px; left: 30px; color: #ADADAD;">username</legend>
+                            <input type="text" name="username" id="username" value="John Doe" />
+                        </fieldset>
+                        <!-- <input type="text" name="username" id="username" value="John Doe" /> -->
+                        <input type="text" name="disabled" id="disabled" value="John Doe" disabled/>
+                    </div>
+
+
+                    <h4 id="other_elements">Other Design Elements</h4>
+                    <h4 id="file">File Upload</h4>
+                    <input type="file" name="file" id="file-uplaod" />
+
+                    <h4 class="font-style">
+                        Radio Button
+                    </h4>
+                    <div class="radio">
+                        <input type="radio" name="Option1" id="opt1">Option1
+                        <input type="radio" name="Option1" id="opt2" checked>Option2
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="Option1" id="checkbox1">Option1
+                        <input type="checkbox" name="Option2" id="checkbox2" checked>Option2
+                    </div>
+
+
+
+                    <h4>SnackBar</h4>
+
+                    <div class="grid-container snackbar">
+                        <div class="alert-box alert">
+                            <span><img src="images/error-icon.svg" alt="" id="err-icon"></span>
+                            <span id="error-msg">This is an error message</span>
+                        </div>
+                        <div class="alert-box info">
+                            <span><img src="images/info-icon.svg" alt="" id="info-icon"></span>
+                            <span id="info-msg">This is an information message</span>
+                        </div>
+                        <div class="alert-box warning">
+                            <span><img src="images/warning-icon.svg" alt="" id="warning-icon"></span>
+                            <span id="warning-msg">This is a warning message</span>
+                        </div>
+                        <div class="alert-box check">
+                            <span><img src="images/check-icon.svg" alt="" id="check-icon"></span>
+                            <span id="succ-msg">This is a success message</span>
+                        </div>
+                    </div>
+
+                    <h4>Call To Action</h4>
+
+                    <div class="action-buttons">
+                        <button class="primary-button">Primary</button>
+                        <button class="secondary-button">Secondary</button>
+                    </div>
+
+                    <h4>Tabs</h4>
+
+                    <div class="tabs">
+                        <ul>
+                            <li>Tab1</li>
+                            <li>Tab2</li>
+                            <li>Tab3</li>
+                            <span class="underline"></span>
+                        </ul>
+
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, rem fuga aut corrupti cum porro magnam assumenda fugiat. Debitis, est.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        
+</body>
+</html>
